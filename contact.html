@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Material Template: Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- import Material Icons from Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- Import the Material stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <!--  Import my stylesheet  -->
+  <link rel="stylesheet" href="./app.css">
+</head>
+
+<body class="mdc-typography">
+  <header class="mdc-top-app-bar mdc-top-app-bar--short mdc-top-app-bar--short-has-action-item" style="top: 0px;">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a href="/#"
+            class="material-icons mdc-top-app-bar__navigation-icon mdc-ripple-upgraded--unbounded mdc-ripple-upgraded">gesture</a><span
+            class="mdc-top-app-bar__title">anshu ravi</span></section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+          <ul class="navList">
+            <li class="navListItem"><a class="navListLink mdc-typography--button" href="/">Work</a></li>
+            <li class="navListItem"><a class="navListLink mdc-typography--button" href="/about.html">About</a></li>
+            <li class="navListItem"><a class="navListLink mdc-typography--button" href="/contact.html">Contact</a></li>
+          </ul>
+        </section> 
+      </div>
+    </header>
+  <main class="contactPage">
+    <h1 class="mdc-typography--headline2 centered">Contact Me</h1>
+    <p class="contactText">Email: anshu.ravi2002@gmail.com</p>
+    <form class="contactForm">
+       <form action="https://formsubmit.co/your@email.com" method="POST">
+       <input type="text" name="name" placeholder="Name" required>
+      
+    <input type="email" name="email" placeholder="Email Address" required>
+      
+      <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--message">
+        <div class="mdc-text-field-character-counter">0 / 500</div>
+        <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40" maxlength="500"></textarea>
+        <div class="mdc-notched-outline">
+          <div class="mdc-notched-outline__leading"></div>
+          <div class="mdc-notched-outline__notch">
+          </div>
+          <div class="mdc-notched-outline__trailing"></div>
+        </div>
+      </div>
+  
+        <button class="mdc-button mdc-button--raised submitButton">
+        <span class="mdc-button__label">Submit</span>
+        <i class="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
+      </button>
+         </form>
+     </form> 
+  </main>
+    
+  <!-- import the Material javascript file -->
+  <script src="bundle.js" async></script>
+</body>
+  
+
+</html>
